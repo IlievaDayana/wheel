@@ -1,0 +1,46 @@
+body {
+    background-color: #201d34;
+    width: 100%;
+    height: 100vh;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    font-weight: 400;
+    padding: 5px 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+    height: 80%;
+}
+
+.wheel {
+    position: relative;
+}
+
+.pointer {
+    position: absolute;
+    z-index: 1;
+    top: 420px;
+    left: 770px;
+}
+
+.rotation {
+    animation-name: rotation;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    transform: rotate(1050deg);
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(1050deg);
+    }
+}
